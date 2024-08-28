@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    /* Definición de variables */
+    --color-principal: #6482AD;
+    --color-secundario: #7FA1C3;
+    --fuente-principal: 'Krona One', sans-serif;
+    --color-terciario: #E2DAD6;
+    --ancho-columna: 300px;
+    --espaciado: 20px;
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-secundario);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+.contenido{
+    height: 80%;
+    align-items: center;
+}
+
+.title{
+    padding-bottom: 12px;
+    font-size: 48px;
+    justify-content: center;
+}
+.subtitle{
+    font-size: 36px;
+text-align: center;
+padding-bottom: 12px;}
+.footer{
+    font-size: 24px;
+}
+
+.column {
+    flex: 1; 
+    min-width: 350px; 
+    box-sizing: border-box;
+}
+
+.container-textarea textarea {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #525c69;
+    font-family: var(--fuente-principal);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    display: flex;
+      justify-content: center;
+      border: 2px solid var(--color-terciario);
+      min-width: 200px;
+      width: auto;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: var(--color-secundario);
+  }
+button:hover {
+    background: var(--color-secundario);
+  }
+
+@media (max-width: 375px) {
+    .title{
+        font-size: 32px;
+        padding: auto;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .footer{
+        font-size: 20px;
+    }
+    .container {
+        margin: 0 2%;
+        min-height: 100%;
+        flex-direction: column; /* Apilar columnas en dispositivos móviles */
+    }
+    .image-container {
+        min-width: 100%; /* Las columnas ocuparán todo el ancho en dispositivos móviles */
+        flex-wrap: wrap-reverse;
+
+    }
+}

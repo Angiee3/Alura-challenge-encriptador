@@ -8,36 +8,36 @@
 </head>
 <body>
     <header>
-        
+        <h1 class="container title">Alura Challenge</h1>
     </header>
-    <h1>Alura Challenge</h1>
-    <div>
-        <div>
-            <h2>Encriptar</h2>
-            <textarea placeholder="Ingresa el texto..."></textarea><br>
-            <button>Encriptar</button>
-            <button>Borrar</button>
-        </div>
-        
-        <div >
-            <img src=".#" alt="Imagen descriptiva">            
-            <p></p>
-            <button>Copiar</button>
-         </div>
-         
+    
+    <div class="contenido">
+        <h2 class="subtitle">Encriptador / Descencriptador</h2>
+        <div class="container">
+            <div class="column container-textarea">
+                <textarea id="inputTexto" placeholder="Ingresa el texto..."></textarea><br>
+                <button onclick="encriptarTexto()">Encriptar</button>
+                <button onclick="desencriptarTexto()">Desencriptar</button>
+                <button onclick="validarTexto()">Validar</button>
+                <button onclick="borrarTexto()">Limpiar</button>
+            </div>
             
-        <div>
-            <h2>Desencriptar</h2>
-            <textarea placeholder="Ingresa el texto..."></textarea><br>
-            <button>Desencriptar</button>
-            <button>Borrar</button>
-            <div></div>
-        </div> 
+            <div class="column image-container">
+                <div id="mensaje"></div>
+                <img src="./assets/imagen.svg" alt="Imagen descriptiva">            
+                <p></p>
+                <button onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+
 
     <script src="script.js"></script>
 
 </body>
-<footer>
-
+<footer class="container">
+    <div class="footer"> Angie Pinzón 2024
+            <a href="https://github.com/Angiee3"><img src="./assets/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/angie-pinz%C3%B3n-9482b0251/"><img src="./assets/LinkedIn.svg"alt="LinkedIn"></a>
+    </div>
 </footer>
 </html>
